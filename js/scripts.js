@@ -14,7 +14,13 @@ function pingPongGame (userInput) {
   };
   return answer;
 };
+function reverse() {
+  var userInput = $("#number").val();
+  var pingNum = pingPongGame(userInput);
+  $(".output").show();
+  $("#results").html(pingNum.reverse());
 
+}
 // UI LOGIC
 $(document).ready(function () {
   $("#ping-pong").submit(function (event) {

@@ -6,7 +6,7 @@
 
 #### By _**Kheifer Fuller**_
 
-##Description
+## Description
 _The ping-pong test is designed to display a user's understanding of basic looping and arrays. To further expand upon that knowledge the JavaScript page is also divided into front-end(user interface logic) and back-end(business logic) development. Below is a list of the specs used to guide Behavior Driven Development(BDD)._
 
 Behavior                                                          | Input  | Output

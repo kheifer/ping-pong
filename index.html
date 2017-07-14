@@ -18,13 +18,15 @@
           <li>Numbers divisible by 5 become "pong"</li>
           <li>Numbers divisible by 15 become "pingpong"</li>
         </ul>
+        <p>Bizarro Pong will count down from your number to 1 while running the same exceptions.</p>
       </div>
       <form id="ping-pong">
         <div class="form-group">
           <label for="number">Enter a number to test:</label>
           <input type="number" min="1" id="number" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-success">Run!</button>
+        <button type="submit" class="btn btn-success" value="button-one">Ping Pong!</button>
+        <button type="button" onclick="reverse()" class="btn btn-success" value="button-two">Bizarro Pong!</button>
       </form>
 
     </div>
