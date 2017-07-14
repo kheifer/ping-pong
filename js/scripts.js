@@ -4,13 +4,13 @@ function pingPongGame(userInput) {
   for(var i=1; i<=userInput; i++){
     //answer.push(i);
     if (i%15 === 0) {
-      answer.push("ping-pong");
+      answer.push("<li>pingpong</li>");
     } else if (i%5 === 0) {
-      answer.push("pong");
+      answer.push("<li>pong</li>");
     } else if (i%3 === 0) {
-      answer.push("ping");
+      answer.push("<li>ping</li>");
     } else {
-       answer.push(i);
+       answer.push("<li>" +i+ "</li>");
     }
   }
 
@@ -29,7 +29,9 @@ $(document).ready(function () {
     event.preventDefault();
     var userInput = $("#number").val();
     var pingNum = pingPongGame(userInput);
-    alert(pingNum);
+    $(".output").show();
+    $("#results").html(pingNum);
+
 
   });
 });
