@@ -3,10 +3,12 @@ function pingPongGame(userInput) {
   answer =[];
   for(var i=1; i<=userInput; i++){
     //answer.push(i);
-    if (i%3 === 0) {
+    if (i%5 === 0) {
+      answer.push("pong");
+    } else if (i%3 === 0) {
       answer.push("ping");
     } else {
-      answer.push(i);
+       answer.push(i);
     }
   }
 
