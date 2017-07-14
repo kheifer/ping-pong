@@ -2,7 +2,12 @@
 function pingPongGame(userInput) {
   answer =[];
   for(var i=1; i<=userInput; i++){
-    answer.push(i);
+    //answer.push(i);
+    if (i%3 === 0) {
+      answer.push("ping");
+    } else {
+      answer.push(i);
+    }
   }
 
   return answer;
