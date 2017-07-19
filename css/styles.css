@@ -1,3 +1,23 @@
 .output{
   display: none;
 }
+body{
+  background: lightblue;
+}
+.jumbotron{
+  border-radius: 1em;
+  margin: 2em;
+  padding: 2em;
+}
+.jumbotron h1{
+  text-align: center;
+}
+.pi{
+  color: red;
+}
+.po{
+  color: yellow;
+}
+.pipo{
+  color: orange;
+}
