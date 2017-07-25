@@ -22,12 +22,16 @@ $(document).ready(function () {
     var userInput = $("#number").val();
     var pingNum = pingPongGame(userInput);
     $(".output").show();
-    $("#results").html(pingNum);
+    for (var j = 0; j < pingNum.length; j++) {
+     $('#results').append('<li>' + pingNum[j]);
+    };
   });
   $("#reverse").click(function(){
     var userInput = $("#number").val();
     var pingNum = pingPongGame(userInput);
     $(".output").show();
-    $("#results").html(pingNum.reverse());
-  });
+    var reverseOutput = pingNum.reverse()
+    for (var k = 0; k < pingNum.length; k++) {
+     $('#results').append('<li>' + reverseOutput[k]);
+    };  });
 });
