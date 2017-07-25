@@ -16,22 +16,27 @@ function pingPongGame (userInput) {
 };
 
 // UI LOGIC
+// UI LOGIC
 $(document).ready(function () {
   $("#ping-pong").submit(function (event) {
     event.preventDefault();
     var userInput = $("#number").val();
     var pingNum = pingPongGame(userInput);
+    var final =[];
     $(".output").show();
     for (var j = 0; j < pingNum.length; j++) {
-     $('#results').append('<li>' + pingNum[j] +'</li>');
+     final.push('<li>' + pingNum[j] +'</li>');
     };
+    $("#results").html(final);
   });
   $("#reverse").click(function(){
     var userInput = $("#number").val();
-    var pingNum = pingPongGame(userInput);
+    var pingNum = pingPongGame(userInput).reverse();
+    var final =[];
     $(".output").show();
-    var reverseOutput = pingNum.reverse()
     for (var k = 0; k < pingNum.length; k++) {
-     $('#results').append('<li>' + reverseOutput[k]+'</li>');
-    };  });
+     final.push('<li>' + pingNum[k]+'</li>');
+    };
+    $("#results").html(final);
+  });
 });
