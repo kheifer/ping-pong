@@ -23,7 +23,7 @@ $(document).ready(function () {
     var pingNum = pingPongGame(userInput);
     $(".output").show();
     for (var j = 0; j < pingNum.length; j++) {
-     $('#results').append('<li>' + pingNum[j]);
+     $('#results').append('<li>' + pingNum[j] +'</li>');
     };
   });
   $("#reverse").click(function(){
@@ -32,6 +32,6 @@ $(document).ready(function () {
     $(".output").show();
     var reverseOutput = pingNum.reverse()
     for (var k = 0; k < pingNum.length; k++) {
-     $('#results').append('<li>' + reverseOutput[k]);
+     $('#results').append('<li>' + reverseOutput[k]+'</li>');
     };  });
 });
