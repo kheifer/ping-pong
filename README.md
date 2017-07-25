@@ -13,12 +13,9 @@ Behavior                                                          | Input  | Out
 ----------------------------------------------------------------- | ------ | ------
 The application collects the input data | 2 |[2]
 The application can count up to the number provided by the input | 2 | [1, 2]
-The application can create an array of all the numbers from one to any number a user inputs | 2001 | [1,2, 3 ... 2001]
 Given a number divisible by 3 the application returns with "ping" | [3] | [1, 2, "ping"]
 Given a number divisible by 5 the application returns with "pong" | [5] | [1, 2, ping, 4, "pong"]
-Given a number divisible by 15 the application returns with "pingpong" | [15] | [1, 2, ping, 4, pong..."pingpong"]
-The application outputs both word and number strings in an array | 3 | [1, 2, ping]
-The application returns new results for each number  | [4, 5] | [(1, 2, "ping", 4), (1, 2, "ping", 4, "pong")]
+Given a number divisible by 15 the application returns with "pingpong" | [15] | [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong]
 The application returns the results in a bulleted list  | [4, 5]] | [(1, 2, "ping", 4), (1, 2, "ping", 4, "pong")]
 
 
