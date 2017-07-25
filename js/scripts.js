@@ -3,13 +3,13 @@ function pingPongGame (userInput) {
   var answer = [];
   for (var i = 1; i <= userInput; i++) {
     if (i % 15 === 0) {
-      answer.push('<li class="pipo">pingpong</li>');
+      answer.push('pingpong');
     } else if (i % 5 === 0) {
-      answer.push('<li class="po">pong</li>');
+      answer.push('pong');
     } else if (i % 3 === 0) {
-      answer.push('<li class="pi">ping</li>');
+      answer.push('ping');
     } else {
-      answer.push('<li>' + i + '</li>');
+      answer.push(i);
     }
   };
   return answer;
